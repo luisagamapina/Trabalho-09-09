@@ -1,0 +1,327 @@
+:root {
+  --cinza-claro: rgb(244, 244, 244);
+  --cinza-escuro: rgb(57, 59, 66);
+  --cinza-chumbo-fonte: rgb(71, 71, 71);
+  --azul-claro: rgb(118, 178, 208);
+  --verde-limao: rgb(181, 211, 86);
+  --rosa: rgb(196, 72, 97);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+  color: var(--cinza-chumbo-fonte);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a.botao{
+  display: inline-block;
+  padding: 0.85em 1.8em;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: opacity 0.2s ease;
+  background: var(--azul-claro);
+  color: #fff;
+}
+
+a#botao {
+    background-color: white;
+    color: black;
+}
+
+
+
+header nav > a {
+  background: #fff;
+  color: var(--cinza-escuro);
+  border-radius: 20px;
+  padding: 0.5em 1.4em;
+  font-size: 0.85rem;
+}
+
+
+header {
+  position: relative;
+  background: linear-gradient(rgba(30, 30, 35, 0.55), rgba(30, 30, 35, 0.55)),
+    url('images/bokeh_car_lights_bg.jpg') center/cover no-repeat;
+  color: #fff;
+  min-height: 480px;
+  display: flex;
+  flex-direction: column;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+}
+
+header nav > div {
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+}
+
+header nav > ul {
+  display: flex;
+  gap: 2rem;
+  flex: 1;
+  justify-content: center;
+}
+
+header nav > ul a {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+header nav > ul a:hover {
+  opacity: 1;
+}
+
+header > div {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1.5rem 4rem;
+}
+
+header > div h1 {
+  font-size: 2.6rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+header > div p {
+  font-size: 1.05rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+section > div:nth-of-type(1) {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+}
+
+section > div:nth-of-type(1) h2 {
+  color: var(--cinza-escuro);
+  font-size: 1.9rem;
+  margin-bottom: 0.6rem;
+}
+
+section > div:nth-of-type(1) p {
+  color: #8a8a8a;
+}
+
+
+section:nth-of-type(1) {
+  background: var(--cinza-claro);
+  padding: 5rem 2rem;
+}
+
+section:nth-of-type(1) > div:nth-of-type(2) {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+section:nth-of-type(1) > div:nth-of-type(2) > div {
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  padding: 2.5rem 1.8rem;
+  text-align: center;
+}
+
+
+section:nth-of-type(1) > div:nth-of-type(2) > div > div {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.2rem;
+}
+
+section:nth-of-type(1) > div:nth-of-type(2) > div > div svg {
+  width: 26px;
+  height: 26px;
+}
+
+/* cor de cada ícone, pela posição do card (1º, 2º, 3º) */
+section:nth-of-type(1) > div:nth-of-type(2) > div:nth-child(1) > div {
+  background: var(--azul-claro);
+}
+section:nth-of-type(1) > div:nth-of-type(2) > div:nth-child(2) > div {
+  background: var(--verde-limao);
+}
+section:nth-of-type(1) > div:nth-of-type(2) > div:nth-child(3) > div {
+  background: var(--rosa);
+}
+
+section:nth-of-type(1) > div:nth-of-type(2) h3 {
+  color: var(--cinza-escuro);
+  font-size: 1.05rem;
+  margin-bottom: 0.8rem;
+}
+
+section:nth-of-type(1) > div:nth-of-type(2) p {
+  font-size: 0.9rem;
+  color: #8a8a8a;
+}
+
+
+section:nth-of-type(2) {
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+section:nth-of-type(2) > div:nth-of-type(1) h2 {
+  font-size: 2rem;
+}
+
+section:nth-of-type(2) > div:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+
+section:nth-of-type(2) > div:nth-of-type(2) > div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-align: left;
+}
+
+section:nth-of-type(2) > div:nth-of-type(2) > div img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+section:nth-of-type(2) > div:nth-of-type(2) > div > div {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+}
+
+section:nth-of-type(2) > div:nth-of-type(2) > div > div strong {
+  color: var(--cinza-escuro);
+}
+
+section:nth-of-type(2) > div:nth-of-type(2) > div > div span {
+  color: #8a8a8a;
+}
+
+
+section:nth-of-type(2) > p {
+  max-width: 700px;
+  margin: 2.5rem auto 2rem;
+  color: #8a8a8a;
+  font-size: 0.95rem;
+}
+
+
+footer {
+  background: var(--cinza-escuro);
+  color: #c9c9c9;
+  padding: 4rem 2rem 2rem;
+}
+
+footer > div:nth-of-type(1) {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto 2.5rem;
+}
+
+
+footer > div:nth-of-type(1) > div h4 {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+footer > div:nth-of-type(1) > div ul li {
+  margin-bottom: 0.7rem;
+  font-size: 0.85rem;
+}
+
+footer > div:nth-of-type(1) > div ul li a:hover {
+  color: #fff;
+}
+
+footer hr {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 1100px;
+  margin: 0 auto 1.5rem;
+}
+
+footer > div:nth-of-type(2) {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: #9a9a9a;
+}
+
+footer > div:nth-of-type(2) > div {
+  display: flex;
+  gap: 0.6rem;
+}
+
+footer > div:nth-of-type(2) > div a {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: #fff;
+}
+
+footer > div:nth-of-type(2) > div a:hover {
+  background: var(--azul-claro);
+}
+
